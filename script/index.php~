@@ -1,8 +1,14 @@
 <?php
 
-require_once(__DIR__ . '/includes/rest/RestServer.php');
+require_once('./includes/rest/RestServer.php');
+require_once("./config.php");
 require_once('./RestController.php');
 
-$server = new \Jacwright\RestServer\RestServer('debug');
-$server->addClass('RestController');
-$server->handle();
+if(is_dir("./install")) {
+	echo "<a href='/install/index.php'>Please install the script</a>";
+}
+else {
+	$server = new \Jacwright\RestServer\RestServer('debug');
+	$server->addClass('RestController');
+	$server->handle();
+}
