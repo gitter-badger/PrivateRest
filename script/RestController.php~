@@ -9,7 +9,7 @@ class RestController
      */
     public function index()
     {
-	// ToDo: generate object to represent all routes with generator and return it
+        return "{}";
     }
 
     /**

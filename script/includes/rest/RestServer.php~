@@ -26,6 +26,11 @@
 require(__DIR__ . '/RestFormat.php');
 require(__DIR__ . '/RestException.php');
 
+use ReflectionClass;
+use ReflectionObject;
+use ReflectionMethod;
+use DOMDocument;
+
 /**
  * Description of RestServer
  *

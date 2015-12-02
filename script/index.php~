@@ -5,7 +5,7 @@ require_once("./config.php");
 require_once('./RestController.php');
 
 if(is_dir("./install")) {
-	echo "<a href='/install/index.php'>Please install the script</a>";
+	echo "<a href='./install/index.php'>Please install the script</a>";
 }
 else {
 	$server = new \Jacwright\RestServer\RestServer('debug');

@@ -8,7 +8,7 @@ if(is_dir("./install")) {
 	echo "<a href='./install/index.php'>Please install the script</a>";
 }
 else {
-	$server = new \Jacwright\RestServer\RestServer('debug');
+	$server = new RestServer('debug');
 	$server->addClass('RestController');
 	$server->handle();
 }
