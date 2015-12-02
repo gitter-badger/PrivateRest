@@ -1,0 +1,21 @@
+<?php
+	$config['header'] = "PHP Setup Wizard";
+	$config['applicationPath'] = "../../../";
+	$config['database_file'] = "app/config/database.php";
+	
+	// INTRODUCTION
+	$introduction = array();
+	$introduction["product"] = "PHP Setup Wizard";
+	$introduction["productVersion"] = "1.0";
+	$introduction["company"] = "WolveWare e.U.";
+
+	// SERVER REQUIREMENTS
+	$requirements = array();
+	$requirements["phpVersion"] = "5";
+	$requirements["extensions"] = array("mysql", "pcre");
+
+	// FILE PERMISSIONS
+	// r = readable, w = writable, x = executable
+	$filePermissions = array();
+	$filePermissions["app/config/database.php"] = "rw";
+	$filePermissions["app/tmp"] = "rw";
