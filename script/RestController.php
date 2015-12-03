@@ -1,7 +1,9 @@
 <?php
 
 require_once("config.php");
-require_once("/includes/jwt/JWT.php");
+require_once("includes/jwt/JWT.php");
+
+use \Firebase\JWT\JWT;
 
 class RestController
 {
@@ -13,6 +15,8 @@ class RestController
     public function index()
     {
 	// ToDo: generate object to represent all routes with generator and return it
+
+	return JWT::encode('abc', 'my_key');
     }
 
     /**
