@@ -1,0 +1,7 @@
+Routes:
+
+/auth
+	post: /login
+	post: /logout
+		
+	
